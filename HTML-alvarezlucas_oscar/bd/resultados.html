@@ -23,5 +23,44 @@
             </li>
         </ul>
     </nav>
+<h1>Ejemplo de tabla HTML</h1>
+<p>En primer lugar observe <strong>la siguiente figura:</strong></p>
+<figure>
+    <img src="../figuras/tabla-examen-html.png" alt="tabla del examen" width="434" height="124">
+</figure>
+<p>Ahora codifique una tabla HTML que represente la información de la figura anterior. Le recordamos que lo importante es la semántica, no la presentación.</p>
+<table border="1" style="text-align: center;">
+    <tr>
+        <th scope="col">Examen</th>
+        <th scope="col">Aprobados</th>
+        <th scope="col">Suspensos</th>
+        <th scope="col">No presentados</th>
+        <th scope="col">Total</th>
+    </tr>
+    <tr>
+        <th scope="row">1ª Ev</th>
+        <td colspan="2">8</td>
+        <td>14</td>
+        <td>30</td>
+    </tr>
+    <tr>
+        <th scope="row">2ª EV</th>
+        <td rowspan="2">9</td>
+        <td>7</td>
+        <td>9</td>
+        <td>26</td>
+    </tr>
+    <tr>
+        <th scope="row">3ª EV</th>
+        <td rowspan="2" colspan="2">6</td>
+        <td>21</td>
+    </tr>
+    <tr>
+        <th scope="row">Final</th>
+        <td>6</td>
+        <td >18</td>
+    </tr>
+</table>
+<p><strong>Aviso:</strong> Aquí debe aparecer su tabla HTML.</p>
 </body>
 </html>
