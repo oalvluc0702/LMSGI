@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>index</title>
+</head>
+
+<body>
+
+  <nav>
+    <h1>Zona de navegación de nuesta web.</h1>
+
+    <li>
+      <a href="index.html">Página inicial</a>
+    </li>
+    <li>
+      <a href="info/tecnologia/blog.html">Nuestro blog</a>
+    </li>
+    <li>
+      <a href="sat/resultados.html">Resultados</a>
+    </li>
+    <li>
+      <a href="">Ayuda HTML</a>
+    </li>
+  </nav>
+  
+  <h1>Encuesta alumando</h1>
+  <form method="post" enctype="multipart/form-data">
+      <fieldset>
+        <legend>Datos iniciales</legend>
+        <label for="temas">Seleccione a continuación cuales son los temas de su interés:</label>
+        <p>
+          <label>
+            <input type="checkbox" name="temas" value="HTML">HTML</input>
+          </label>
+        </p>
+        <p>
+          <label>
+            <input type="checkbox" name="temas" value="CSS">Estilos CSS</input>
+          </label>
+        </p>
+        <p>
+          <label>
+            <input type="checkbox" name="temas" value="javascript">El lenguaje JaVAsCRIPT</input>
+          </label>
+        </p>
+        <p>
+          <label>
+            indique la fecha de incorporación al curso (que debe ser posterior al 15 de septiembre de 2019) <br>
+            <input type="date" name="fecha_incorporacion" value=""></input>
+          </label>
+        </p>
+        <p>
+          <label>
+            Adjunta dos fotos, una tipo DNI y otra de cuerpo entero <br>
+            <input type="file" name="archivo" value=""></input>
+          </label>
+        </p>
+        <label">Vamos a pintar la clase: selecione el color preferido (por defeto rojo) <input type="color" name="color_preferido" value="#ff0000"></label>
+        <p>
+          <label>Indique si dispone de ella, su página web: <input type="text" name="pagina_web" value=""></label>
+        </p>
+        <p>
+          <label>Indique su código de alumno: <input type="text" name="codigo_alumno" placeholder="[AAA][1-2]"></input> Formato: tres mayusculas seguidas de 1 o 2 dígitos.</label>
+        </p>
+        
+        <p>
+            <p><label for="zona">Seleccione zona donde víve</label></p>
+          <p>
+            <label>
+              <input type="radio" name="zona" value="Jerez" id="zona" checked>Jerez(* Valor por defecto)</input>
+            </label>
+          </p>
+            <p>
+              <label>
+                <input type="radio" name="zona" value="Pedanias" id="zona">Pedanías: Cuartillos, Estella, etc..</input>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input type="radio" name="zona" value="Fuera" id="zona">Fuera de Jerez: El Puerto, Chipiona ,etc..</input>
+              </label>
+            </p>
+        </p>
+        <p>
+          <label>
+            <input type="checkbox" name="notificaciones" checked required> Acepto recibir noticaciones del estado de la encuesta (campo
+              obligatorio)
+          </label>
+        </p>
+      </fieldset>
+      <p><input type="submit" name="confirmar" value="enviar"> <input type="reset" name="reset" value="limpiar"></p>
+  </form>
+
+</body>
+
+</html>
