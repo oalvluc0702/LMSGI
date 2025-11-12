@@ -10,7 +10,7 @@
 <body>
 
   <nav>
-    <h1>Zona de navegación de nuesta web.</h1>
+    <h2>Zona de navegación de nuesta web.</h2>
 
     <li>
       <a href="index.html">Página inicial</a>
@@ -27,23 +27,23 @@
   </nav>
   
   <h1>Encuesta alumando</h1>
-  <form method="post" enctype="multipart/form-data">
+  <form action="procesa.php" method="post" enctype="multipart/form-data">
       <fieldset>
         <legend>Datos iniciales</legend>
         <label for="temas">Seleccione a continuación cuales son los temas de su interés:</label>
         <p>
           <label>
-            <input type="checkbox" name="temas" value="HTML">HTML</input>
+            <input type="checkbox" name="temas" value="HTML" id="temas">HTML</input>
           </label>
         </p>
         <p>
           <label>
-            <input type="checkbox" name="temas" value="CSS">Estilos CSS</input>
+            <input type="checkbox" name="temas" value="CSS" id="temas" >Estilos CSS</input>
           </label>
         </p>
         <p>
           <label>
-            <input type="checkbox" name="temas" value="javascript">El lenguaje JaVAsCRIPT</input>
+            <input type="checkbox" name="temas" value="javascript" id="temas">El lenguaje JaVAsCRIPT</input>
           </label>
         </p>
         <p>
@@ -55,10 +55,10 @@
         <p>
           <label>
             Adjunta dos fotos, una tipo DNI y otra de cuerpo entero <br>
-            <input type="file" name="archivo" value=""></input>
+            <input type="file" name="archivo" value="" multiple></input>
           </label>
         </p>
-        <label">Vamos a pintar la clase: selecione el color preferido (por defeto rojo) <input type="color" name="color_preferido" value="#ff0000"></label>
+        <label for="color_preferido">Vamos a pintar la clase: selecione el color preferido (por defeto rojo) <input type="color" name="color_preferido" id="color_preferido"value="#ff0000"></label>
         <p>
           <label>Indique si dispone de ella, su página web: <input type="text" name="pagina_web" value=""></label>
         </p>
