@@ -49,7 +49,7 @@
         <p>
           <label>
             indique la fecha de incorporación al curso (que debe ser posterior al 15 de septiembre de 2019) <br>
-            <input type="date" name="fecha_incorporacion" value=""></input>
+            <input type="date" name="fecha_incorporacion" value="2019-11-15" min="2019-11-15"></input>
           </label>
         </p>
         <p>
@@ -63,7 +63,7 @@
           <label>Indique si dispone de ella, su página web: <input type="text" name="pagina_web" value=""></label>
         </p>
         <p>
-          <label>Indique su código de alumno: <input type="text" name="codigo_alumno" placeholder="[AAA][1-2]"></input> Formato: tres mayusculas seguidas de 1 o 2 dígitos.</label>
+          <label>Indique su código de alumno: <input type="text" name="codigo_alumno" placeholder="[AAA][1-2]" pattern="[A-Z]{3}[0-9]{1,2}"></input> Formato: tres mayusculas seguidas de 1 o 2 dígitos.</label>
         </p>
         
         <p>

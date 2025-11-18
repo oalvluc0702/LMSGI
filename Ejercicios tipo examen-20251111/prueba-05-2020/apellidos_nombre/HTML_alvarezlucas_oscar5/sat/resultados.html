@@ -1,39 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>resultados</title>
+  </head>
+  <body>
+    <nav>
+      <h2>Zona de navegación de nuesta web.</h2>
 
+      <li>
+        <a href="../index.html">Página inicial</a>
+      </li>
+      <li>
+        <a href="../info/tecnologia/blog.html">Nuestro blog</a>
+      </li>
+      <li>
+        <a href="resultados.html">Resultados</a>
+      </li>
+      <li>
+        <a href="">Ayuda HTML</a>
+      </li>
+    </nav>
 
+    <h1>Resultados encuesta</h1>
 
+    <p>Observe en la siguiente figura los resultados de la encuesta:</p>
 
-  
-  
-  
-  Encuesta
+<img src="../figuras/resultados.png" alt="una imagen de la tabla resultados" width="427" height="143">
+    <figure>Figura 01: resultados de la encuesta</figure>
 
-
-
-  
-    Zona de navegación de nuesta web.
-    
-      Página inicial
-      Nuestro blog
-      Resultados
-      Ayuda HTML
-    
-  
-
-  Resultados encuesta
-
-  Observe en la siguiente figura los resultados de la encuesta:
-
-  
-    
-    Figura 01: resultados de la encuesta
-  
-
-  
-    Ahora como ejercicio HTML codificaré una tabla HTML que represente la
-    información de la figura anterior. Le recordamos que
-    lo importante es la semántica, no la presentación..
-  
-
-  Aviso: Aquí debe aparecer su tabla HTML.
-
-
+    <p>
+      Ahora como ejercicio HTML codificaré una tabla HTML que represente la
+      información de la figura anterior. Le recordamos que lo importante es la
+      semántica, no la presentación.
+    </p>
+    <p>Aviso: Aquí debe aparecer su tabla HTML.</p>
+    <table border="1px" style="text-align: center;">
+      <caption>Resultados Encuesta</caption>
+      <th> </th>
+      <th scope="col">Trimestre1</th>
+      <th scope="col">Trimestre2</th>
+      <th scope="col">Trimestre3</th>
+      <th scope="col" >Total</th>
+      <tr>
+        <th scope="row">Zona1</th>
+        <td colspan="2">8</td>
+        <td>14</td>
+        <td>30</td>
+      </tr>
+      <tr>
+        <th scope="row">Zona2</th>
+        <td rowspan="2">9</td>
+        <td>7</td>
+        <td>9</td>
+        <td>23</td>
+      </tr>
+      <tr>
+        <th scope="row">Zona3</th>
+        <td colspan="2" rowspan="2">6</td>
+        <td>21</td>
+      </tr>
+      <tr>
+        <th scope="row">Zona4</th>
+        <td>6</td>
+        <td>18</td>
+      </tr>
+       <tr>
+        <th scope="row">Totales</th>
+        <td>23</td>
+        <td>21</td>
+        <td>29</td>
+        <td>95</td>
+      </tr>
+      <tr>
+      <th scope="row"></th>
+      <th scope="col">Trimestre1</th>
+      <th scope="col">Trimestre2</th>
+      <th scope="col">Trimestre3</th>
+      <th scope="col">Total</th>
+      </tr>
+    </table>
+  </body>
+</html>
