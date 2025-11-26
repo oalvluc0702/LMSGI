@@ -1,0 +1,26 @@
+/* selector contenedor*/
+article p {
+    color: blue;
+    font-style:italic;
+/*hijo*/
+}
+article > p {
+    color: red;
+    text-align: center;
+}
+/*adyacente*/
+h1+p,
+h2+p {
+    color: lime;
+    background-color:#ff00ff;
+}
+article + h2{
+    background-color: bisque;
+    color: aquamarine;
+}
+h3 ~ h4 {
+    background-color: lightgoldenrodyellow;
+}
+[title]{
+    color: yellow;
+}
